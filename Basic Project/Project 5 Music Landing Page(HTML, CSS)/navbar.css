@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  padding: 14px 0px;
+  width: 100%;
+  align-items: center;
+}
+header{
+  background-color: rgb(56, 0, 199);
+ 
+}
+.logo{
+  font-size: 35px;
+  font-weight: 600;
+  padding:0 10px;
+}
+ul{
+  list-style-type: none;
+  display: flex;
+  
+}
+ul a{
+  color:white;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 500;
+padding: 0 30px;
+transition:all .3s ease-in-out;
+}
+ul a:hover{
+
+  transform: scale(1.2);
+}

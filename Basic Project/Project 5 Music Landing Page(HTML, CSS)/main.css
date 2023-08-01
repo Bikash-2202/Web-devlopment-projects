@@ -1,0 +1,138 @@
+main{
+    margin: 0;
+    padding: 0;
+
+}
+.hero-section
+{
+    height:100vh;
+    background: url(./hero_image.png);
+    background-repeat:  no-repeat;
+  background-size: cover;
+    display:grid;
+    color:white;
+   place-items: center;
+text-align: center;
+
+}
+.hero-section .container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-section h1{
+    font-size:90px;
+}
+.hero-section h3{
+    font-size: 30px;
+}
+.hero-section p{
+    font-size:24px;
+}
+.music-section
+{
+    background-color: rgb(32, 4, 93) ;
+    color: white;
+    padding-top: 50px;
+    /* overflow: hidden; */
+}
+.music-section .container{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+.music-section .container h1
+{
+    font-size: 40px;
+}
+.music-section .container p
+{
+    font-size: 24px;
+}
+.music-section .container button
+{
+padding:7px 8px;
+margin:5px;
+border:none;
+border-radius:3px;
+}
+
+.primary-btn
+{
+    background-color: red;
+    border:none;
+    color:white;
+    transition: 0.2s ease-in-out;
+}
+.primary-btn:hover,.secondary-btn:hover{
+ /* transition:.2s ease-in-out; */
+ transform:scale(1.02);
+ opacity: .8;
+}
+.ipad-iphone
+{
+    position:relative;
+    top:300px;
+    margin-top: -300px;
+}
+.readmore{
+    margin-top: 350px;
+    
+}
+.readmore .container
+{
+    display:grid;
+    align-items: center;
+    justify-items:center;
+    flex-direction: column;
+    gap:50px;
+    text-align: center;
+    max-width: 70vw;
+    margin:0px auto;
+    font-size:24px;
+}
+.secondary-btn
+{
+    padding:8px;
+    font-size: 20px;
+    color:white;
+    background-color: rgb(6, 45, 218);
+    border-radius: 5px;
+    border:none;
+}
+.giftclame
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:24px;
+    transition:.3s ease-in-out
+}
+.firsthalf img{
+    transition:.3s ease-in-out;
+}
+.firsthalf img:hover{
+    transform: scale(1.04);
+    transition:.2s ease-in-out;
+}
+.secondhalf
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    gap:20px;
+    max-width: 50%;
+    border-bottom:1px solid black;
+    padding-bottom: 5px;
+}
+.secondhalf button{
+max-width: 100px;
+align-items: center;
+margin:0px auto;
+}

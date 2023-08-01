@@ -1,0 +1,126 @@
+/*Css Doxument*/
+@import
+url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import
+url(https://fonts.googleapis.com/css?family=Bree+Serif);
+body{
+    /* background:#212121; */
+    font-size:22px;
+    color:#ffffff;
+    word-wrap:break-word !important;
+    font-family: 'Open Sans',sans-serif;
+    padding:0px;
+    margin:0px;
+}
+h1
+{
+    font-size:60px;
+    text-align: center;
+    color:#FFF;
+    font-family:'Bree Serif','serif';
+    /* margin-top:100px; */
+    
+}
+h2{
+    font-size:50px;
+    text-align: center;
+    color:white;
+    font-family:'Bree Serif','serif';
+
+    
+}
+h3 a
+{
+   color:#FFF;
+}
+a
+{
+    color:#FFF;
+}
+#container
+{
+    margin:0 auto;
+}
+/* p
+{
+    text-align:center;
+} */
+nav{
+    margin:0px;
+    padding:0px;
+    background-color:#E64A19;
+    position:fixed;
+    width: 100vw;
+    z-index: 1;
+}
+nav ul
+{
+    
+    padding:0;
+    margin:0;
+    list-style:none;
+    position:relative;
+}
+nav ul li 
+{
+    display:inline-block;
+    background-color: #E64A19;
+}
+nav a{
+    display:block;
+padding: 0px 10px;
+color:#FFF;
+font-size:20px;
+line-height: 60px;
+text-decoration: none;
+}
+nav a:hover{
+    background-color: #000000;
+}
+/*Hide Drop down by default*/
+nav ul ul
+{
+    display:none;
+    position:absolute;
+    top:60px;
+}
+nav ul li:hover >ul{
+    display: inherit;
+}
+/*First Tier Dropdown*/
+nav ul ul li{
+    width:170px;
+    float:none;
+    display: list-item;
+    position:relative;
+}
+/*Second,third and more tiers*/
+nav ul ul ul li{
+    position: relative;
+    top:-60px;
+    left:170px;
+}
+/*Change this in order to change the Dropdown symbol*/
+li > a:after{content: ' +';}
+li> a:only-child:after{content: '';}
+
+.landing
+{ 
+background:url("./developer.png");
+min-height: 80vh;
+line-height: 30px;
+padding-top:50px;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.blackbox 
+{
+    background-color: black;
+    padding: 1px;
+    text-transform: uppercase;
+   font-stretch: expanded;
+
+}
+
+
+

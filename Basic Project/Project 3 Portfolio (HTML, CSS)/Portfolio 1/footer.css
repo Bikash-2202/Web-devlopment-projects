@@ -1,0 +1,91 @@
+.footer{
+    margin: 0;
+    font-size:15px;
+    padding: 0;
+
+}
+footer{
+    width:100vw;
+}
+
+.footer-box
+{
+    display:flex;
+    /* justify-content:center; */
+width: 100vw;
+    margin: 0;
+
+}
+.footer-boxes
+{
+    width:100vw;
+    list-style: none;
+    padding: 15px;
+    line-height: 1.5;
+    background-color: rgb(4, 27, 52);
+    color:white;
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+ul li a {
+    
+    text-decoration: none;
+    color:white;
+    font-size: 15px;
+    
+}
+ul li a:hover{
+    text-decoration: underline;
+    font-size:16px ;
+    transition:.1ms ease-in-out;
+}
+.footer-span
+{
+    color:gray;
+    margin-bottom: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#mailus
+{
+    border-left: 1px double white;
+}
+.footer-boxes2
+{
+    border-top: .0001px solid white;
+    list-style: none;
+    padding: 15px;
+    line-height: 1.5;
+    background-color: rgb(4, 27, 52);
+    color:white;
+    margin: 0;
+    text-decoration: none;
+    display: flex;
+    width:100vw;
+    justify-content: center;
+    
+}
+.footer span a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    font-size: 15px;
+}
+.footer span a:hover{
+    font-size:16px;
+    text-decoration:underline ;
+}
+.creditcard
+{
+    width:30px;
+    margin-left: 30px;
+}
+.footer-base
+{
+    width: 100vw;
+    background-color:rgb(4, 27, 52) ;
+}
