@@ -1,0 +1,270 @@
+.container{
+    max-width: 160rem;
+    margin:0 auto;
+    padding:0 1.5rem;
+}
+.smaller-container
+{
+    margin-left:270px;
+    width:70%;
+}
+.place-items-center
+{
+
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-grid
+{
+    display: grid;
+
+}
+.section
+{
+    padding-block: 5rem;
+}
+
+.featured-articlea
+{
+    padding-block: 2rem;
+}
+.section-header-offset
+{
+    margin-top: 7.4rem;
+}
+.featured-articles-container, .featured-content
+{
+    gap:20px;
+}
+.headline-banner
+{
+    background-color: rgb(167, 164, 164);
+    display: flex;align-items: center;
+    gap:10px;
+    font-size:17px;
+    overflow: hidden;
+}
+
+.headline
+{
+    color:white;
+    font-size:1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem;
+    height: 100%;
+    overflow: hidden;
+}
+.headline span{
+    height: inherit;
+}
+.fancy-border
+{
+    position:relative;
+    overflow:hidden;
+     
+}
+.fancy-border::before{
+    content:'';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(45deg,rgb(81, 164, 196),red);
+    background-size: 50% 100%;
+    z-index: 5;
+}
+.fancy-border span{
+    position: relative;
+    z-index: 10;
+    display: inline-flex;
+    padding:.2rem 1.5rem;
+    background-color: rgb(95, 88, 88);
+}
+.article{
+    position: relative;
+    min-height:500px;
+    overflow: hidden;
+}
+.article-image
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s;
+    
+
+}.article-category
+{
+    position: absolute;
+    top:2rem;
+    right:1rem;
+    padding:1rem;
+    font-size:1rem;
+    background-color:lightslategray;
+    color:#fff;
+    text-transform: uppercase;
+    z-index:10;
+}
+.article-data-container
+{
+    overflow: hidden;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding:.6rem 1.5rem;
+    background-color: rgba(0,0,0,.8);
+    z-index:10;
+    width:100%;
+    transition: background-color .5s;
+    color:rgba(255,255,255,.5)
+    
+}
+
+.article:hover .article-data-container
+{
+    background-color: rgba(0,0,0,.9);
+    color:white;
+}
+.article:hover .article-data-spacer
+{
+    background-color: #fff;
+    
+}
+
+
+.article-data
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.article-data-spacer
+{
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: rgba(255,255,255,.5);
+    transform:rotate(45deg)
+}
+.article-title{
+    font-size: 25px;
+}
+.side-bar
+{
+    background-color:gray;
+    padding: 2rem;
+}
+.trending-news-box
+{
+    color:rgba(255,255,255,.5);
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    padding-block:1rem;
+    /* border: 1px solid rgba(0,0,0,.8); */
+}
+.trending-news-box:last-of-type
+{
+    border-bottom: none;
+}
+.trending-news-image-box
+{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    
+    /* overflow: hidden; */
+}
+.featured-content-title
+{
+    font-size:20px;
+    text-align: center;
+    padding:1rem;
+}
+.trending-number
+{
+    position:absolute;
+    top:-.8rem;
+    left:-.8rem;
+    z-index: 15;
+    width:2.5rem;
+    height: 2.5rem;
+    background-color:rgb(50, 49, 49);
+    color:white;
+    border-radius:50%;
+    
+}
+.trending-news-data .article-title{
+    font-size:20px;
+}
+.trending-news-box:hover .article-title{
+    color:white;
+}
+
+.quick-read 
+{
+    width: 100%;
+    
+}
+
+
+.section-title{
+    position: relative;
+    font-size:20px;
+    margin-bottom: 6rem;
+}
+.section-title::before
+{
+    content:att(data-name);
+    font-size:24px;
+    text-transform:uppercase ;
+    opacity: .1;
+    position: absolute;
+    top:1.5rem;
+    left:2rem;color:white;
+}
+
+.article.swiper-slide{
+    height: 40rem;
+ 
+}
+.swiper{
+    width: 100%;
+  position: relative;
+}
+.swiper-wrapper
+{
+ height:600px;
+ 
+
+}
+.swiper-controls
+{
+    position:absolute;
+    width:3.5rem;
+    z-index:11;
+    height:3.5rem;
+    text-align: center;
+
+    /* background-color:gray; */
+}
+.swiper-button-prev
+{
+  top:50%;
+  
+}
+.swiper-button-next
+{
+  top:50%;
+  right:0;
+}
+.swiper-controls::after{
+    font-size:1.5rem;
+    color:white;
+}

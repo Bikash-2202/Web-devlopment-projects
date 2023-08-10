@@ -1,0 +1,140 @@
+*
+{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+body
+{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding: 0 35px;
+    background:linear-gradient(to left top,#031a9a,#8b53ff) ;
+}
+.wrapper
+{
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    
+
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.wrapper .carousel
+{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap:16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.carousel.no-transition
+{
+    scroll-behavior: auto;
+}
+.carousel.dragging{
+    scroll-behavior: auto;
+    scroll-snap-type: none;
+}
+.carousel.dragging .card 
+{
+    cursor:grab;
+    user-select: none;
+    -webkit-user-select: none;
+    
+}
+.carousel :where(.card, .img)
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .card
+{
+    scroll-snap-align: start;
+    height:342px;
+    list-style: none;
+    background-color: #fff;
+    border-radius:8px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 15px;
+    box-shadow: 50px 50px 200px inset #8b53ff;
+}
+
+
+.card .img
+{
+    width:198px;
+    height:198px;
+    background-color: #8853ff;
+    border-radius: 50%;
+   
+}
+.card .img img
+{
+    width:190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:4px solid #fff;
+}
+.card h2{
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin:30px 0 5px;
+}
+.card span
+{
+    color:#6a6d78;
+    font-size:14px ;
+}
+
+.wrapper i
+{
+    position: absolute;
+    width: 50px;
+    background-color: #fff;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px;
+    transform: translateY(-50%);
+}
+ .wrapper i:first-child/*.fa-angle-double-left*/
+{
+    top:50%;
+    left: -22px;
+}
+.wrapper i:last-child/* .fa-angle-double-right */
+{
+    top:50%;
+    right: -22px;
+}
+@media screen and (max-width:900px)
+{
+    .wrapper .carousel
+    {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+}
+@media screen and (max-width:600px)
+{
+    .wrapper .carousel
+    {
+        grid-auto-columns:calc((100% / 1) - 9px);
+    }
+}
+
