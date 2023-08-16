@@ -56,7 +56,6 @@ function changeTheme(y)
 {
     y.classList.toggle("fa-sun");
     y.classList.toggle("fa-moon");
-
     // theme.classList.toggle("dark-theme");
     // theme.classList.toggle("light-theme");
 }
@@ -75,23 +74,8 @@ else{
 window.addEventListener('scroll', scrollHeader)
 
 
-const swiper = new Swiper('.swiper',{
-    slidesPerView: 1,
-    spaceBetween:20,
-    navigation:{
-        nextEl:'.swiper-button-next',
-        prevEl:'.swiper-button-prev'
-    },
-    pagination:{
-        el:'.swiper-pagination'
-    },
-    breakpoints:
-    {
-        700:{
-            slidesPerView:2
-        },
-    1200:{
-slidesPerView:3
-    }
-    }
-})
+const profilePicture = document.querySelector('.fa-user');
+const profileMenu = document.querySelector('.profile-menu');
+profilePicture.addEventListener('click', function () {
+	profileMenu.classList.toggle('show-hide');
+});

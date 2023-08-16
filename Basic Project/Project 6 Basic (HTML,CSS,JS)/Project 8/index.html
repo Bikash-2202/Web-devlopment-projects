@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<script src="script.js" defer></script>
+</head>
+<body>
+    <div><img src="./1495725897Free-spiderman-png-transparent-background.png" alt=""></div>
+
+    <h1>Bikash</h1>
+
+    <!-- Slider main container -->
+<div class="swiper mySwiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="./images/article-image-1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/quick-read-1.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/quick-read-2.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/quick-read-3.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/quick-read-4.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/quick-read-5.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/quick-read-6.jpg" alt=""></div>
+      <div class="swiper-slide"><img src="./images/quick-read-7.jpg" alt=""></div>
+    </div>
+    
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    autoplay:{
+        delay:3500,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });</script>
+</body>
+</html>

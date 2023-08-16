@@ -1,0 +1,145 @@
+/* .container{
+    background-color: black;
+
+} */
+.section-title{
+    color:white;
+    font-size: 50px;
+    font-weight: 700;
+    background-color: red;height: 100px;
+    width: 100%;
+    line-height: 100px;
+ margin-bottom: -39px;
+}
+
+.swiper
+{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1300px;
+    /* padding:0 25px; */
+    position: relative;
+    /* overflow-x:hidden; */
+}
+.carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4));
+    gap:0 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    align-items: center;
+    scroll-snap-align: start;
+    
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.carousel.dragging{
+   scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.carousel.dragging .cards {
+    cursor: grab;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.carousel.no-transition{
+    scroll-behavior: auto;
+}
+.cards{
+    scroll-snap-align: start;
+    list-style: none;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto;
+    overflow:hidden;
+    border:3px solid black;
+    width: calc(100% -8px);
+
+}
+.dark-theme .cards{
+    border:none;
+    color: black;
+}
+.carousel :where(.cards, .image)
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .card .image img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+} */
+.image img{
+  padding:5px 0;
+     height: 500px;
+    width: calc(100% - 8px);
+    object-fit: cover; 
+    border-radius: 2%;
+}
+
+.wrapper i 
+{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0,0,0,.2);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    color:white;
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+}
+
+.wrapper i:first-child{
+    top:45%;
+    left: 1px;
+}
+.wrapper i:last-child{
+    top:45%;
+    right: 2px;
+}
+h3{
+    font-size: 1.5rem;
+    text-align: start;
+}
+@media only screen and ( max-width:1200px)
+
+{   .carousel
+    {
+        grid-auto-columns: calc(100% / 3);
+    }
+    .cards{
+        scroll-snap-align: center;}
+}
+@media only screen and ( max-width:900px)
+
+{   .carousel
+    {
+        grid-auto-columns: calc((100% / 2) - 9px);
+    }
+    .cards{
+        scroll-snap-align: start;}
+}
+@media only screen and ( max-width:600px)
+
+{   .carousel
+    {
+        grid-auto-columns: calc(100%);
+    }
+    .cards{
+        scroll-snap-align: center;
+    }
+}

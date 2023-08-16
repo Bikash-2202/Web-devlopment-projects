@@ -12,6 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/title logo.png" type="image/x-icon">
     <link rel="stylesheet" href="content.css">
+    <link rel="stylesheet" href="swiper.css">
+    <script src="swiper.js" defer></script>
 </head>
 
 <body class="theme">
@@ -38,6 +40,80 @@
                 <button class="start-button">Create Blog</button>
             </div>
         </nav>
+        <div class="profile-menu">
+            <div class="user-about">
+              <div>
+                <img class="profile" src="./images/profile-image.jpg" alt="" />
+              </div>
+              <div>
+                <p>Pheonix</p>
+                <p>@phenix3243</p>
+                <a href="">Manage Your Account</a>
+              </div>
+            </div>
+            <hr />
+            <div class="account">
+              <a class="flex" href=""><i class="fas fa-user"></i>
+                <p>Your Blog</p>
+              </a>
+              <a href="" class="flex"><i class="fas fa-studiovinari"></i>
+                <p>Blog Studio</p>
+              </a>
+              <a href="" class="flex"><i class="fas fa-sign-in-alt"></i>
+                <p>Sign Out</p>
+              </a>
+            </div>
+            <hr />
+            <div class="subscirption">
+              <a href="" class="flex"><i class="fas fa-circle-dollar-to-slot"></i>
+                <p>Purchase and memberships</p>
+              </a>
+              <a href="" class="flex"><i class="fas fa-user-lock"></i>
+                <p>Your data in Blog</p>
+              </a>
+            </div>
+            <hr />
+            <div class="setting-shortcut">
+              <a href="" class="flex"><i class="fa fa-moon"></i>
+                <p>Appearance:Device theme</p>
+                <i class="fas fa-angle-right arrow"></i>
+              </a>
+              <a href="" class="flex"><i class="fa fa-language"></i>
+                <p>Language:English</p>
+                <i class="fas fa-angle-right arrow"></i>
+              </a>
+              <a href="" class="flex"><i class="fa fa-user-shield"></i>
+                <p>Restricted Mode:off</p>
+                <i class="fas fa-angle-right arrow"></i>
+              </a>
+        
+              <a href="" class="flex"><i class="fa fa-earth-asia"></i>
+                <p>Location:India</p>
+                <i class="fas fa-angle-right arrow"></i>
+              </a>
+        
+              <a href="" class="flex"><i class="fa fa-keyboard"></i>
+                <p>Keyboard</p>
+              </a>
+            </div>
+            <hr />
+            <div class="setting">
+              <a href="" class="flex"><i class="fas fa-gear"></i>
+                <p>Settings</p>
+              </a>
+            </div>
+            <hr />
+            <div class="help">
+              <a href="" class="flex"><i class="fas fa-question-circle"></i>
+                <p>Help</p>
+              </a>
+        
+              <a href="" class="flex"><i class="fas fa-exclamation-circle"></i>
+                <p>Send feedback</p>
+              </a>
+            </div>
+          </div>
+        
         <div class="sidebar" id="sidebar"></div>
     </header>
 
@@ -64,33 +140,34 @@
                         <h3 class="title article-title">Is VR the future?</h3>
                     </div>
                 </a>
-                <a href="./post.html" class="article featured-article featured-article-1">
+                <a href="./post.html" class="article featured-article featured-article-2">
                     <img src="./images/article-image-2.jpg" alt="" class="article-image">
-                    <span class="article-category">Technology</span>
+                    <span class="article-category">Hotel</span>
                     <div class="article-data-container">
                         <div class="article-data">
-                            <span>Dec 5th 2021</span>
+                            <span>July 31th 2023</span>
                             <span class="article-data-spacer"></span>
-                            <span>8 min red</span>
+                            <span>4 min red</span>
                         </div>
-                        <h3 class="title article-title">Is VR the future?</h3>
+                        <h3 class="title article-title">
+                            Which hotel is Best?</h3>
                     </div>
                 </a>
-                <a href="./post.html" class="article featured-article featured-article-1">
+                <a href="./post.html" class="article featured-article featured-article-3">
                     <img src="./images/article-image-3.jpg" alt="" class="article-image">
-                    <span class="article-category">Technology</span>
+                    <span class="article-category">Food</span>
                     <div class="article-data-container">
-                        <div class="ar0ticle-data">
-                            <span>Dec 5th 2021</span>
+                        <div class="article-data">
+                            <span>Aug 5th 2023</span>
                             <span class="article-data-spacer"></span>
-                            <span>8 min red</span>
+                            <span>6 min red</span>
                         </div>
-                        <h3 class="title article-title">Is VR the future?</h3>
+                        <h3 class="title article-title">Healthy vs Tasty?</h3>
                     </div>
                 </a>
             </div>
             <div class="side-bar d-grid">
-                <h3 class="title featured-content-title">Trendig News</h3>
+                <h3 class="title featured-content-title">Trending News</h3>
                 <a href="#" class="trending-news-box">
                     <div class="trending-news-image-box">
                         <span class="trending-number place-items-center">01</span>
@@ -169,94 +246,158 @@
     <section class="quick-read section">
 
         <div class="container">
-
             <h2 class="title section-title" data-name="Quick read">Quick read</h2>
             <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="article swiper-slide">
-                        <img class="article-image" src="./images/quick-read-1.jpg" alt="">
+                <div class="wrapper">
+                    <i id="left" class="fas fa-angle-double-left"></i>
+                    <ul class="carousel">
+                        <li class="cards">
+                            <div class="image"><img src="./images/quick-read-1.jpg" alt=""></div>
+                            <span>Date : 12 Aug 2023</span>
+                            <h3>Is Vr is the future?</h3>
+                        </li>
+                        <li class="cards">
+                            <div class="image"><img src="./images/quick-read-2.jpg" alt=""></div>
+                            <span>Date : 12 Aug 2023</span>
+                            <h3>Is Vr is the future?</h3>
+                        </li>
+                        <li class="cards">
+                            <div class="image"><img src="./images/quick-read-3.jpg" alt=""></div>
+                            <span>Date : 12 Aug 2023</span>
+                            <h3>Is Vr is the future?</h3>
+                        </li>
+                        <li class="cards">
+                            <div class="image"><img src="./images/quick-read-4.jpg" alt=""></div>
+                            <span>Date : 12 Aug 2023</span>
+                            <h3>Is Vr is the future?</h3>
+                        </li>
+                        <li class="cards">
+                            <div class="image"><img src="./images/quick-read-5.jpg" alt=""></div>
+                            <span>Date : 12 Aug 2023</span>
+                            <h3>Is Vr is the future?</h3>
+                        </li>
+                        <li class="cards">
+                            <div class="image"><img src="./images/quick-read-6.jpg" alt=""></div>
+                            <span>Date : 12 Aug 2023</span>
+                            <h3>Is Vr is the future?</h3>
+                        </li>
+                        <li class="cards">
+                            <div class="image"><img src="./images/quick-read-7.jpg" alt=""></div>
+                            <span>Date : 12 Aug 2023</span>
+                            <h3>Is Vr is the future?</h3>
+                        </li>
 
-                        <div class="article-data-container">
-                            <div class="article-data">
-                                <span>Dec 5th 2021</span>
-                                <span class="article-data-spacer"></span>
-                                <span>8 min red</span>
-                            </div>
-                            <h3 class="title article-title">Is VR the future?</h3>
-                        </div>
-                    </div>
-                    <div class="article swiper-slide">
-                        <img class="article-image" src="./images/quick-read-2.jpg" alt="">
-
-                        <div class="article-data-container">
-                            <div class="article-data">
-                                <span>Dec 5th 2021</span>
-                                <span class="article-data-spacer"></span>
-                                <span>8 min red</span>
-                            </div>
-                            <h3 class="title article-title">Is VR the future?</h3>
-                        </div>
-                    </div>
-                    <div class="article swiper-slide">
-                        <img class="article-image" src="./images/quick-read-3.jpg" alt="">
-
-                        <div class="article-data-container">
-                            <div class="article-data">
-                                <span>Dec 5th 2021</span>
-                                <span class="article-data-spacer"></span>
-                                <span>8 min red</span>
-                            </div>
-                            <h3 class="title article-title">Is VR the future?</h3>
-                        </div>
-                    </div>
-                    <div class="article swiper-slide">
-                        <img class="article-image" src="./images/quick-read-4.jpg" alt="">
-
-                        <div class="article-data-container">
-                            <div class="article-data">
-                                <span>Dec 5th 2021</span>
-                                <span class="article-data-spacer"></span>
-                                <span>8 min red</span>
-                            </div>
-                            <h3 class="title article-title">Is VR the future?</h3>
-                        </div>
-                    </div>
-                    <div class="article swiper-slide">
-                        <img class="article-image" src="./images/quick-read-5.jpg" alt="">
-
-                        <div class="article-data-container">
-                            <div class="article-data">
-                                <span>Dec 5th 2021</span>
-                                <span class="article-data-spacer"></span>
-                                <span>8 min red</span>
-                            </div>
-                            <h3 class="title article-title">Is VR the future?</h3>
-                        </div>
-                    </div>
-                    <div class="article swiper-slide">
-                        <img class="article-image" src="./images/quick-read-6.jpg" alt="">
-
-                        <div class="article-data-container">
-                            <div class="article-data">
-                                <span>Dec 5th 2021</span>
-                                <span class="article-data-spacer"></span>
-                                <span>8 min red</span>
-                            </div>
-                            <h3 class="title article-title">Is VR the future?</h3>
-                        </div>
-                    </div>
+                    </ul>
+                    <i id="right" class="fas fa-angle-double-right"></i>
                 </div>
-                <div class="swiper-button-prev swiper-controls"><i class="fas fa-angle-double-left"></i></div>
-                <div class="swiper-button-next swiper-controls"><i class="fas fa-angle-double-right"></i></div>
-                <div class="swiper-pagination"></div>
+            </div>
+
+
+        </div>
+    </section>
+    <section class="popular-tags section">
+        <div class="container">
+            <h2 class="title section-title" data-name="popular tags">Popular tags</h2>
+            <div class="d-grid pop">
+                <div class="pop-tags">
+                    <span class="tag-name">#Travel</span>
+                    <img src="./images/quick-read-1.jpg" alt="">
+                </div>
+                <div href="#" class="pop-tags">
+                    <span class="tag-name">#Food</span>
+                    <img src="./images/Trending-6.jpg" alt="">
+                </div>
+                <div href="#" class="pop-tags">
+                    <span class="tag-name">#Technology</span>
+                    <img src="./images/article-image-1.jpg" alt="">
+                </div>
+                <div href="#" class="pop-tags">
+                    <span class="tag-name">#Health</span>
+                    <img src="./images/Trending-3.jpg" alt="">
+                </div>
+                <div href="#" class="pop-tags">
+                    <span class="tag-name">#Nature</span>
+                    <img src="./images/quick-read-6.jpg" alt="">
+                </div>
+                <div href="#" class="pop-tags">
+                    <span class="tag-name">#Sports</span>
+                    <img src="./images/quick-read-4.jpg" alt="">
+                </div>
             </div>
         </div>
     </section>
-    <!-- Main Content Ends -->
+    <!-- NewsLetter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="title section-title">News Letter</h2>
+            <p class="sub">Subscribe to Blog</p>
+            <p class="info">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum rem unde omnis aperiam.
+                Obcaecati, dolorem ea! Enim unde doloribus quo nihil possimus voluptatum sunt exercitationem nostrum
+                molestias nesciunt voluptatem, incidunt autem qui cumque beatae.</p>
+            <form action="" class="form">
+                <input type="text" placeholder="Enter your Email">
+                <button class="btn" type="submit" title="btn"><i class="fas fa-envelope"></i></button>
+            </form>
+        </div>
+    </section>
     <!-- Footer Starts -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-elements">
+                <a href="#trending-news-box">Trending</a>
+                <ul class="useful-links">
+                    <li class="link">Travel</li>
+                    <li class="link">Food</li>
+                    <li class="link">Health</li>
+                    <li class="link">Technology</li>
+                </ul>
+            </div>
+            <div class="footer-elements">
+                <a href="#trending-news-box">Categories</a>
+                <ul class="useful-links">
+                    <li class="link">Travel</li>
+                    <li class="link">Food</li>
+                    <li class="link">Health</li>
+                    <li class="link">Technology</li>
+                </ul>
+            </div>
+            <div class="footer-elements">
+                <a href="#trending-news-box">Company</a>
+                <ul class="useful-links">
+                    <li class="link">Travel</li>
+                    <li class="link">Food</li>
+                    <li class="link">Health</li>
+                    <li class="link">Technology</li>
+                </ul>
+            </div>
+            <div class="footer-elements">
+                <a href="#trending-news-box">Useful-Link</a>
+                <ul class="useful-links">
+                    <li class="link">Travel</li>
+                    <li class="link">Food</li>
+                    <li class="link">Health</li>
+                    <li class="link">Technology</li>
+                </ul>
+            </div>
+            <div class="company-data">
+                <img src="./images/logo.png" alt="" class="logo">
+                <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas architecto
+                    perspiciatis magnam alias qui in soluta fuga tempora, voluptates aperiam saepe nobis ratione neque
+                    maxime et dolorum deleniti officiis beatae.</p>
+                <ul class="social-icons">
+                    <li class="icon"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="icon"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="icon"><i class="fa-brands fa-twitter"></i></li>
+                    <li class="icon"><i class="fa-brands fa-pinterest"></i></li>
+                </ul>
+                <p class="copyright">&copy; Bikash Kumar 2023</p>
+            </div>
+        </div>
+    </footer>
+
+
     <!-- Footer Ends -->
 
 
 </body>
-
 </html>

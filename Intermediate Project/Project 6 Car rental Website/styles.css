@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    place-items: center;
+    justify-content: space-evenly;
+}
+
+.nav {
+    display: flex;
+    /* justify-content:space-between; */
+    width: 100%;
+    font-size: 20px;
+    height: 50px;
+    box-shadow: 0 4px 10px black;
+
+}
+
+.nav-left {
+    width: 250px;
+
+
+}
+
+.nav-left img {
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav-middle {
+    width: 100%;
+
+}
+
+.search-box {
+    width: 50%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-left: 30px;
+
+}
+
+.search-box .input {
+    width: 90%;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-right: 2px solid black;
+}
+
+.fa-search {
+    padding: 5px;
+}
+
+.links {
+    list-style: none;
+    text-decoration: none;
+    width: 60%;
+    justify-content: end;
+    padding: 0 10px;
+
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+}
+
+.links li:hover {
+    transform: scale(1.1);
+}
+
+.nav-right {
+    width: 250px;
+
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .nav-right*/
+.btn {
+    padding: 7px 13px;
+    border: none;
+    color: white;
+    background-color: orangered;
+    border-radius: 5px;
+    font-size: 15px;
+    transform: all ease .5s;
+}
+
+/* .nav-right*/
+.btn:hover {
+    box-shadow: 2px 2px 0 black;
+}
+
+
+
+/* Main section css styles */
+
+
+.container {
+    /* max-width: 1300px; */
+    margin: 0 auto;
+    /* background-color: blue; */
+}
+
+.landing-page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px 50px;
+    gap: 0 20px;
+    height: 80vh;
+
+}
+
+.left-container {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 30px;
+    padding-bottom: 30px;
+}
+
+.left-container p:first-child {
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.left-container h2 {
+    font-size: 70px;
+    letter-spacing: 4px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 70px;
+    margin-bottom: 20px;
+}
+
+.left-container span {
+    color: red;
+}
+
+.right-container {
+    align-self: flex-end;
+}
+
+.right-container img {
+    width: 80%;
+    height: 350px;
+    margin-left: 100px;
+    /* background-color: green; */
+}
+
+.left-container .btn {
+    font-size: 20px;
+    height: 50px;
+    padding: 5px 30px;
+    margin: 20px 10px;
+}
+
+.btn2 {
+    background-color: black;
+}
+
+
+/* Booking Form */
+
+.booking-form {
+    /* width: 1300px; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    /* background-color: red; */
+    /* padding-left: 50px; */
+    margin-left: 50px;
+}
+
+.booking-form p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.booking-form span {
+    font-size: 22px;
+    color: red;
+}
+
+.booking-form .input,
+.booking-form #cars {
+    height: 30px;
+    width: 70%;
+    outline: none;
+    /* border:none; */
+    padding: 5px;
+    font-size: 15px;
+}
+
+.container h4 {
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.button {
+    grid-column: 2/3;
+    width: 100%;
+}
+
+.button .btn {
+    width: 70%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.about-section {
+    text-align: center;
+    margin-top: 20px;
+}
+.about-section p:first-child{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about-section h3{
+    margin-top: 10px;
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 0 10px;
+
+}
+.about p{
+    font-size: 18px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: justify;
+}
+.about h4{
+
+    margin-left:-10px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+.first-container,
+.second-container,
+.third-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 30px;
+    height: 400px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.first-container img,
+.second-container img,
+.third-container img {
+    width: 90px;
+    margin-bottom: 50px;
+    border-bottom: 10px solid red;
+    transition: all ease .5s;
+}
+.first-container img:hover,
+.second-container img:hover
+,.third-container img:hover
+{
+    transform: scale(1.1);
+}
+.third-container img{
+    margin-left: -40px;
+}
