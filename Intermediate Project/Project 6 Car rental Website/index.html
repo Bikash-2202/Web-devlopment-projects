@@ -19,7 +19,7 @@
 <body>
     <!--Header Start -->
     <header>
-        <nav class="nav">
+        <nav class="nav flex">
             <div class="nav-left flex">
                 <img src="./Cars/car 1.png" alt="">
                 <p>Cars Rental</p>
@@ -27,18 +27,19 @@
             <div class="nav-middle flex">
                 <div class="search-box flex"><input type="text" placeholder="Search For Your Vehicle" class="input"><i
                         class="fas fa-search"></i></div>
-                <ul class="links flex">
+                <ul id="links" class="links flex">
                     <li><a href="#">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Vehicle Models</a></li>
-                    <li><a href="">Testimonials</a></li>
-                    <li><a href="">Our Team</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#vehicle">Vehicles</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="nav-right flex">
                 <a href="">Sign in</a>
                 <button class="btn" type="submit">Register</button>
+                <i class="fas fa-bars menu-toggle display-on-small"></i>
             </div>
         </nav>
     </header>
@@ -47,8 +48,8 @@
 
     <!-- Main content start -->
 
-    <section class="landing-page container">
-        <div class="left-container">
+    <section class="landing-page ">
+        <div class="left-container container">
             <p>Plan your Trip now</p>
             <h2>Save <span>big</span> with our car rental</h2>
             <p>Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.
@@ -58,7 +59,7 @@
                 <button class="btn btn2" type="submit">Learn More</button>
             </div>
         </div>
-        <div class="right-container"><img src="./Cars/car 1.png" alt=""></div>
+        <div class="right-container container"><img src="./Cars/car 1.png" alt=""></div>
     </section>
 
     <section class="booking-section">
@@ -103,7 +104,7 @@
         </div>
     </section>
 
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="container">
             <p>Plan your trip now</p>
             <h3>Quick & easy car rental</h3>
@@ -120,35 +121,32 @@
                 </div>
                 <div class="third-container "><img src="./Cars/4422039.png" alt="">
                     <h4>Let's Drive</h4>
-                    <p>Whether you're hitting the open road. We've got you covered with our wide range of cars.</p>
+                    <p>Whether you are hitting the open road. We have got you covered with our wide range of cars.</p>
                 </div>
 
 
             </div>
         </div>
     </section>
-    <section class="vehicle-section">
+    <section id="vehicle" class="vehicle-section">
         <div class="container"></div>
         <p>Vehicle Models</p>
         <h4>Our rental fleet</h4>
         <p>Choose from a variety of our amazing vehicles to rent for you next adventure or business trip</p>
         <div class="vehicle">
-            <div class="table flex"><a href="" class="active">Mercedes-Benz GLK </a>
-                <a href="">BMW 320 ModernLine</a>
-                <a href="">Tesla</a>
-                <a href="">VW Golf 6</a>
-                <a href="">VW Passat CC</a>
-                <a href="">Ford Mustang</a>
-                <a href="">Hundai Verna</a>
+            <div id="table" class="table flex">
+                <ul id="table-list">
+                <li class="">Mercedes-Benz GLK </li>
+                <li>BMW 320 ModernLine</li>
+                <li>Tesla</li>
+                <li>VW Golf 6</li>
+                <li>VW Passat CC</li>
+                <li>Ford Mustang</li>
+                <li>Hundai Verna</li>
+            </ul>
             </div>
             <div class="vehicle-images">
-                <img class="active-car" src="./Cars/Car-PNG-File.png" alt="">
-                <img src="./Cars/car-png-images-13.png" alt="">
-                <img src="./Cars/Car-Transparent.png" alt="">
-                <img src="./Cars/cars-png-31.png" alt="">
-                <img src="./Cars/R (1).png" alt="">
-                <img src="./Cars/R.png" alt="">
-                <img src="./Cars/tesla_car_PNG14.png" alt="">
+                <img class="active-car" src="./Cars/Car_1.png" alt="">
             </div>
             <div class="vehicle-about">
                 <table>
@@ -242,7 +240,7 @@
         </div>
         <!-- </div> -->
     </section>
-    <section class="client-testimonial">
+    <section id="testimonials" class="client-testimonial">
         <div class="testimonial-info">
             <p>Reviewed by People</p>
             <h3>Client's Testimonials</h3>
@@ -319,7 +317,7 @@
 
 
 
-    <section class="faq">
+    <section id="team" class="faq">
         <div class="info">
             <p>FAQ</p>
             <h3>Frequently Asked Questions</h3>
@@ -368,7 +366,7 @@
                 <button class="btn" type="submit"><img src="./images/google play.png" alt="">
                     <p>Google Play</p>
                 </button>
-                <button class="btn" type="submit"><img src="./images/apple logo.png" alt="">Apple Store</button>
+                <button class="btn" type="submit"><img src="./images/apple logo.png" alt=""><p>Apple Store</p> </button>
             </div>
         </div>
         <div class="right-container"><img src="./images/phone.png" alt=""></div>
@@ -377,7 +375,7 @@
 
     <!-- Footer Start here -->
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div>
             <h4>CAR <span> Rental</span></h4>
             <p>We offers a big range of vehicles for all your dribing needs. WE have the perfect car to meet you needs.
@@ -414,20 +412,6 @@
     <!-- Footer End here -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 20,
-            loop: true,
-            autoplay: { 
-            delay: 500,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
 </body>
 
 </html>
