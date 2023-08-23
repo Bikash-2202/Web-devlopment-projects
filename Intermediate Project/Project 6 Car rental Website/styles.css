@@ -1087,3 +1087,9 @@ th {
         font-size: 10px;
     }
 }
+@media screen and (max-width:320px)
+{
+    .landing-page{
+        height: 90vh;
+    }
+}
