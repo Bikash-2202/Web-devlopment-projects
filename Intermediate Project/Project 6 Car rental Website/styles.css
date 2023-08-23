@@ -7,7 +7,6 @@
 html,
 body {
     width: 100%;
-    /* background-color: rgb(69, 64, 64); */
 }
 
 .flex {
@@ -128,8 +127,9 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px 0;
+    margin: 30px 0;
     gap: 0 20px;
-    height: 90vh;
+    /* height: 90vh; */
 }
 
 .left-container {
@@ -807,6 +807,11 @@ th {
         font-size: 50px;
         line-height: 50px;
     }
+    .left-container .btn{
+        height: 40px;line-height: 20px;
+        margin: 5px 5px;
+        width: 150px;
+    }
 
     .left-container .btn {
         font-size: 12px;
@@ -952,9 +957,6 @@ th {
 }
 
 @media screen and (max-width:500px) {
-    .landing-page{
-        height: 70vh;
-    }
     .footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr .7fr .5fr 1fr;
@@ -1067,9 +1069,7 @@ th {
 
 }
 @media screen and (max-width:415px) {
-    .landing-page{
-        height: none;
-    }
+
     .nav-right .btn{
         display: none;
     }
@@ -1085,11 +1085,5 @@ th {
     }
     .booking-form input{
         font-size: 10px;
-    }
-}
-@media screen and (max-width:320px)
-{
-    .landing-page{
-        height: 90vh;
     }
 }
