@@ -1068,7 +1068,7 @@ th {
 }
 @media screen and (max-width:415px) {
     .landing-page{
-        height: 100vh;
+        height: none;
     }
     .nav-right .btn{
         display: none;
