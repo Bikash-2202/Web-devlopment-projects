@@ -30,7 +30,24 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
-// Car Image toggle
+// Car Image toggle And Chart 
+function carRent(index){
+    const priceTag =document.getElementById('price');
+    priceTag.textContent=` $ ${carObject.arrPrice[index]}  /  Day`;
+    const models =document.getElementById('model');
+    models.textContent=`  ${carObject.Model[index]} `;
+     const marks =document.getElementById('mark');
+    marks.textContent=` ${carObject.Mark[index]}`; 
+    const years =document.getElementById('year');
+    years.textContent=` ${carObject.Year[index]} `;
+    const doors =document.getElementById('door');
+    doors.textContent=` ${carObject.Door[index]} `;
+    const trans =document.getElementById('transmission');
+    trans.textContent=` ${carObject.Transmission[index]} `;
+    const fuel =document.getElementById('fuel');
+    fuel.textContent=` ${carObject.Fuel[index]} `;
+
+}
 
 const table = document.getElementById('table-list')
 const vehicle_table = [...table.children];
@@ -46,6 +63,7 @@ vehicle_table.forEach((btn, index) => {
             activepanel = btn;
             const imagePath = `./Cars/Car_${index + 1}.png`;
             vehicleImage.querySelector('img').src = imagePath;
+            carRent(index);
         }
         else {
             activepanel = null;
