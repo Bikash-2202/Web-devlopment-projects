@@ -128,8 +128,7 @@ function buildMoviesSection(list, categoryName) {
 
   /*Below line uses the map() method to iterate over each item (movie) in the list array. It returns an array of strings, each containing the HTML code for a single movie item. The map() function processes each movie object in the list array and creates an HTML structure for each movie item. After mapping, the join("") method is used to join all the HTML strings together into a single string, moviesListHtml. */
   const moviesListHtml = list.map((item) => {
-      return; 
-      ` <div class="movie-item" onmouseenter ="searchMovieTrailer('${item.title}',  'yt${item.id}')" >
+      return ` <div class="movie-item" onmouseenter ="searchMovieTrailer('${item.title}',  'yt${item.id}')" >
       <img class="movie-item" src="${imgPath}${item.backdrop_path}" alt="${item.title}" />
       <div class="iframe-wrap" id="yt${item.id}"></div>
       </div>`;
@@ -161,9 +160,9 @@ function searchMovieTrailer(movieName) {
       const bestResult = res.items[0];
       const youtubeUrl = `https://www.youtube.com/watch?v=${bestResult.id.videoId}`;
       console.log(youtubeUrl);
-      const elements = document.getElementById(iframeId);
+      const elements = document.getElementById("iframeId");
       const div = document.createElement("div");
-      // div.innerHTML = `<iframe width="245px" height="150px" src="https://www.youtube.com/embed/${bestResult.id.videoId}?autoplay=1&controls=0"></i frame>`;
+      div.innerHTML = `<iframe width="245px" height="150px" src="https://www.youtube.com/embed/${bestResult.id.videoId}?autoplay=1&controls=0"></i frame>`;
       elements.append(div);
     })
     .catch((err) => console.log(err));
