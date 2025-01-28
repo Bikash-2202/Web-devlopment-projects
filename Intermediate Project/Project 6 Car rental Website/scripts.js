@@ -31,6 +31,15 @@ for (i = 0; i < acc.length; i++) {
 
 
 // Car Image toggle And Chart 
+const carObject ={
+    arrPrice:[45,40,50,40,60,80,50],
+    Model: ["Mercedes","BMW","Tesla","VW Golf","VW Passat","Ford Mustang","Verna"],
+    Mark:["A1",'S1',"M1","G35","V12","GT","N1"],
+    Year:["2020","2018","2022","2023","2020","2025","2024"],
+    Door:["4/5","4","2","4/5","2","2","4"],
+    Transmission:["Manual","Automatic","Automatic","Manual","Auto/Manual","Auto/Manual","Manual"],
+    Fuel:["Petrol","Diesel","Electric","Petrol","Petrol","Petrol","Diesel"]
+}
 function carRent(index){
     const priceTag =document.getElementById('price');
     priceTag.textContent=` $ ${carObject.arrPrice[index]}  /  Day`;
